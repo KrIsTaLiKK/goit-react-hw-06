@@ -29,7 +29,7 @@ export const Contact = ({ contact: { name, number, id } }) => {
         </li>
       </ul>
       <button
-        onClick={() => dispatch(deleteContact(id))}
+        onClick={() => dispatch(deleteContact({ id }))}
         className={css.deleteBtn}
       >
         Delete
